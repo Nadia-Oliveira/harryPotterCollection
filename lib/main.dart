@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:harry_potter_collection/splash.view.dart';
+import 'package:harry_potter_collection/feature/splash/splash.view.dart';
 
 void main() {
   runApp(const MyApp());
