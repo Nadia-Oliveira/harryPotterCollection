@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:harry_potter_collection/feature/home/ui/home.view.dart';
+import 'package:harry_potter_collection/feature/home/home.view.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
