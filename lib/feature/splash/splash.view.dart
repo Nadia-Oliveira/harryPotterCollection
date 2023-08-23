@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:harry_potter_collection/feature/home/home.view.dart';
+import 'package:harry_potter_collection/feature/selection_houses.view.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -14,15 +14,14 @@ class _SplashViewState extends State<SplashView> {
   @override
   Widget build(BuildContext context) {
     Timer(
-        Duration(seconds: 5),
-        () =>
-            Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (BuildContext context) => HomePage()))
+      const Duration(seconds: 5),
+      () => Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+            builder: (BuildContext context) => const SelectionHouses()),
+      ),
     );
 
-    return Scaffold(
-        body: Center(
-      child: Text('Splash'),
-    ));
+    return Image.asset('assets/images/bg_two.png',
+        width: MediaQuery.of(context).size.width);
   }
 }
