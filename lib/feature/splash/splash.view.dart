@@ -16,7 +16,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   Widget build(BuildContext context) {
     Timer(
-      const Duration(seconds: 500),
+      const Duration(seconds: 5),
       () => Navigator.of(context).pushReplacement(
         MaterialPageRoute(
             builder: (BuildContext context) => const SelectionHouses()),
